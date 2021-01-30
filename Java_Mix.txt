@@ -1,0 +1,8 @@
+Hi Sam
+I think the other fellow need to join us to create a better understanding how we be more familiar.... 
+
+what do you think. 
+
+I also have a qeustion on JDK. on the path should be java not IBM right? I think that why it shown an error on my Studio. 
+
+C:\Program Files\IBM\WebSphere MQ\java\lib
