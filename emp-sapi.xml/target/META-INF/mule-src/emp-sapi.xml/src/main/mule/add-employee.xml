@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="3726e8f4-feed-45ce-acd6-8609a36b7e43" basePath="emp-sapi" >
+		<http:listener-connection host="localhost" port="8081" />
+	</http:listener-config>
+	<flow name="emp-sapi.xmlFlow" doc:id="193522ed-e83f-4464-a146-b7e8f4a27ad8" >
+		<http:listener doc:name="Listener" doc:id="ff3abee5-d068-472a-834f-901baca44e20" config-ref="HTTP_Listener_config" path="/hello" allowedMethods="GET" doc:description="Udemy Chenna Video 6"/>
+		<logger level="INFO" doc:name="Logger" doc:id="f1bc3561-58e3-4b74-a4d1-ad0d45468ca9" message="Request comes no problem"/>
+	</flow>
+</mule>
